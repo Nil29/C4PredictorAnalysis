@@ -8,6 +8,10 @@ Provided here is the code accompanying the manuscript:
 Yogadasan, N., Doxey, A.C., Chuong, S.D.X. (2023) A machine learning framework identifies plastid-encoded proteins harboring C3 and C4 distinguishing sequence    information. Genome Biology and Evolution (GBE)  - In Review
 <br/>
 <br/>
+<h1 align="left">Requirements</h1>
 
+Python v 3.8 <br/>
+Biopython v 1.79 <br/>
+Other dependencies as listed in .py files
 
 
