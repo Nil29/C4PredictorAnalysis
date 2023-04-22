@@ -93,3 +93,7 @@ strongest_features = [101, 143, 281, 309, 418, 468]
 5) Repeat for alignment data of interest
 
 <br/>
+
+<h1 align="left">Contact</h1>
+<br/>
+Please feel free to contact the lead author of this work (Nilanth Yogadasan) regarding specific implementations of our ML pipeline.
