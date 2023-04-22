@@ -13,7 +13,7 @@ from statistics import pstdev
 
 # Filename with the relevant alignment data
 # Ensure that sequence descriptions in fasta file have appropriate labels included (ex. ">C4_MPC_Paspalidium_geminatum" "C4_" or "C3_" in description will be used to organize data later)
-file_name = 'rbcL_aligned.fasta' 
+file_name = 'alignment_data/rbcL_aligned.fasta' 
 
 # Input optimal features for alignment data (as a list) returned from GetOptimalFeatures.py 
 optimal_features = []
