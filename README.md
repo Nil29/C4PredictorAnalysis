@@ -96,4 +96,4 @@ strongest_features = [101, 143, 281, 309, 418, 468]
 
 <h1 align="left">Contact</h1>
 <br/>
-Please feel free to contact the lead author of this work (Nilanth Yogadasan) regarding specific implementations of our ML pipeline.
+Please feel free to contact the lead author of this work (Nilanth Yogadasan - nyogadas@uwaterloo.ca) regarding specific implementations of our ML pipeline.
