@@ -20,9 +20,11 @@ Other dependencies as listed in .py files<br/>
 <h1 align="left">General Workflow</h1>
 To reproduce summary statistics of v1, v2, and v3 models as reported in the manuscript...<br/>
 <br/>
-## v1 models (v1Modelling.py):<br/>
+
+**v1 models (v1Modelling.py):**
 <br/>
-Set the file_name variable to the correct alignment file you wish to query.
+<br/>
+1) Set the file_name variable to the correct alignment file you wish to query.
 All alignment data is provided.<br/><br/>
 
 ```python
@@ -31,13 +33,15 @@ file_name = 'alignment_data/rbcL_aligned.fasta'
 ```
 <br/>
 
-Run v1Modelling.py <br/><br/>
-Repeat for alignment data of interest
+2) Run v1Modelling.py <br/><br/>
+3) Repeat for alignment data of interest
 
 <br/>
-v2 models (GetTenStrongestFeatures.py -> v2Modelling.py):<br/>
+
+**v2 models (GetTenStrongestFeatures.py -> v2Modelling.py):**
 <br/>
-First determine the 10 strongest features from v1 models. In GetTenStrongestFeatures.py
+<br/>
+1) First determine the 10 strongest features from v1 models. In GetTenStrongestFeatures.py
 set the file_name variable to the correct alignment file you wish to query.
 
 ```python
@@ -46,13 +50,46 @@ file_name = 'alignment_data/rbcL_aligned.fasta'
 ```
 <br/>
 
-Run GetTenStrongestFeatures.py <br/><br/>
+2) Run GetTenStrongestFeatures.py <br/><br/>
 
-In v2Modelling.py set the file_name variable and the strongest features returned from GetTenStrongestFeatures.py
+3) In v2Modelling.py set the file_name variable to the correct alignment file and the strongest features variable to the features returned from GetTenStrongestFeatures.py
 
 ```python
 #example
 file_name = 'alignment_data/rbcL_aligned.fasta' 
 strongest_features = [281, 468, 143, 328, 262, 228, 418, 101, 309, 270]
 ```
+<br/>
 
+4) Run v2Modelling.py <br/><br/>
+5) Repeat for alignment data of interest
+
+<br/>
+
+**v3 models (GetOptimalFeatures.py -> v3Modelling.py):**
+<br/>
+<br/>
+1) First determine the optimal features from using custom recursive feature elimination function. In GetOptimalFeatures.py
+set the file_name variable to the correct alignment file you wish to query.
+
+```python
+#example
+file_name = 'alignment_data/rbcL_aligned.fasta' 
+```
+<br/>
+
+2) Run GetOptimalFeatures.py <br/><br/>
+
+3) In v3Modelling.py set the file_name variable to the correct alignment file and the strongest features variable to the features returned from GetTenStrongestFeatures.py
+
+```python
+#example
+file_name = 'alignment_data/rbcL_aligned.fasta' 
+strongest_features = [101, 143, 281, 309, 418, 468]
+```
+<br/>
+
+4) Run v3Modelling.py <br/><br/>
+5) Repeat for alignment data of interest
+
+<br/>
